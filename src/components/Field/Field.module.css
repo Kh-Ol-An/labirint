@@ -1,0 +1,170 @@
+.field {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.title {
+  width: 70%;
+  font-size: 3rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.addressColumns {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.addressRows {
+  display: flex;
+  flex-flow: column;
+  margin-right: 1em;
+}
+
+.addressColumn,
+.addressRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4em;
+  background: #6996be;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.addressColumn {
+  width: 15em;
+  height: 2em;
+}
+
+.addressRow {
+  width: 2em;
+  height: 15em;
+}
+
+.addressColumn:not(:last-child) {
+  margin-right: 1em;
+}
+
+.addressRow:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.cellWrap {
+  display: grid;
+  grid-template: repeat(auto-fit, 15em) / repeat(auto-fit, 15em);
+  grid-gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.cell {
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ac87cd;
+}
+
+.cellInput {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cellLabelStart,
+.cellBtnFinish {
+  font-size: 3rem;
+  position: absolute;
+  transition: all 300ms ease-in;
+  font-weight: bold;
+}
+
+.cellLabelStart {
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%) scale(0);
+  color: yellow;
+}
+
+.cellBtnFinish {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 45%;
+  color: green;
+  z-index: 2;
+}
+
+.cellBtnFinish > span {
+  display: inline-block;
+  transition: all 300ms ease-in;
+}
+
+.cellInput:checked ~ .cellLabelStart {
+  transform: translateX(-50%) scale(1);
+}
+
+.arrowWrap {
+  width: 29em;
+  display: grid;
+  grid-template: repeat(auto-fit, 5em) / repeat(auto-fit, 5em);
+  grid-gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.arrow {
+  width: 5em;
+  height: 5em;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #576aff;
+}
+
+.arrow > span {
+  font-size: 4rem;
+  color: white;
+}
+
+.up {
+  transform: rotate(0deg);
+}
+
+.right {
+  transform: rotate(90deg);
+}
+
+.down {
+  transform: rotate(180deg);
+}
+
+.left {
+  transform: rotate(-90deg);
+}
+
+.again {
+  font-size: 4rem;
+  padding: 0.1em 0.4em;
+  border: 4px solid darkgreen;
+  border-radius: 0.2em;
+  background: transparent;
+  color: darkgreen;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
