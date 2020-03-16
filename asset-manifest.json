@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/labirint/static/css/main.d990ed8f.chunk.css",
+    "main.js": "/labirint/static/js/main.51377dd4.chunk.js",
+    "main.js.map": "/labirint/static/js/main.51377dd4.chunk.js.map",
+    "runtime-main.js": "/labirint/static/js/runtime-main.d7e6c729.js",
+    "runtime-main.js.map": "/labirint/static/js/runtime-main.d7e6c729.js.map",
+    "static/js/2.59a8b21e.chunk.js": "/labirint/static/js/2.59a8b21e.chunk.js",
+    "static/js/2.59a8b21e.chunk.js.map": "/labirint/static/js/2.59a8b21e.chunk.js.map",
+    "index.html": "/labirint/index.html",
+    "precache-manifest.f83a74872b2d060864d823bd371c19c5.js": "/labirint/precache-manifest.f83a74872b2d060864d823bd371c19c5.js",
+    "service-worker.js": "/labirint/service-worker.js",
+    "static/css/main.d990ed8f.chunk.css.map": "/labirint/static/css/main.d990ed8f.chunk.css.map",
+    "static/js/2.59a8b21e.chunk.js.LICENSE.txt": "/labirint/static/js/2.59a8b21e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7e6c729.js",
+    "static/js/2.59a8b21e.chunk.js",
+    "static/css/main.d990ed8f.chunk.css",
+    "static/js/main.51377dd4.chunk.js"
+  ]
+}
