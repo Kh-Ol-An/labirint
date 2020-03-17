@@ -1,6 +1,7 @@
 .field {
   width: 100%;
   height: fit-content;
+  padding: 1em;
   display: flex;
   flex-flow: column;
   justify-content: center;

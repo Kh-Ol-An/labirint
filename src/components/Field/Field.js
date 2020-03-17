@@ -10,7 +10,7 @@ const columns = [
   { item: "a" },
   { item: "b" },
   { item: "c" },
-  // { item: "d" },
+  { item: "d" }
   // { item: "e" },
   // { item: "f" }
 ];
@@ -18,7 +18,7 @@ const rows = [
   { item: "1" },
   { item: "2" },
   { item: "3" },
-  // { item: "4" },
+  { item: "4" }
   // { item: "5" },
   // { item: "6" },
   // { item: "7" },
@@ -36,7 +36,7 @@ const arrows = [
   "down",
   "left",
   "up",
-  "right",
+  "right"
   // "right",
   // "up",
   // "left",
@@ -106,13 +106,7 @@ const Field = () => {
         }
       }
     }
-    const arr = [];
-    arr[0] = addressColumn.current;
-    arr[1] = addressRow.current;
-    addressColumn.current &&
-      addressRow.current &&
-      addressFinish.length === 0 &&
-      setAddressFinish(arr);
+    installAddresFinish();
   }
 
   function right(arrow) {
@@ -132,13 +126,7 @@ const Field = () => {
         }
       }
     }
-    const arr = [];
-    arr[0] = addressColumn.current;
-    arr[1] = addressRow.current;
-    addressColumn.current &&
-      addressRow.current &&
-      addressFinish.length === 0 &&
-      setAddressFinish(arr);
+    installAddresFinish();
   }
 
   function down(arrow) {
@@ -158,14 +146,7 @@ const Field = () => {
         }
       }
     }
-    const arr = [];
-    arr[0] = addressColumn.current;
-    arr[1] = addressRow.current;
-
-    addressColumn.current &&
-      addressRow.current &&
-      addressFinish.length === 0 &&
-      setAddressFinish(arr);
+    installAddresFinish();
   }
 
   function left(arrow) {
@@ -185,6 +166,10 @@ const Field = () => {
         }
       }
     }
+    installAddresFinish();
+  }
+
+  function installAddresFinish() {
     const arr = [];
     arr[0] = addressColumn.current;
     arr[1] = addressRow.current;
